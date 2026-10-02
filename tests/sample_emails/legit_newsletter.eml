@@ -1,0 +1,27 @@
+From: "Chronicle Weekly" <newsletter@chronicleweekly.com>
+To: subscriber@example.com
+Subject: Your weekly digest is here
+Date: Mon, 14 Sep 2026 08:12:00 -0400
+Message-ID: <a1b2c3d4@chronicleweekly.com>
+Authentication-Results: mx.example.com; spf=pass smtp.mailfrom=chronicleweekly.com; dkim=pass header.i=@chronicleweekly.com; dmarc=pass header.from=chronicleweekly.com
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hey there,
+
+Here is what we covered this week. Five stories, about a ten minute read
+total.
+
+1. A look at how three local bakeries are handling the flour price
+increase.
+2. Our readers wrote in about last week's piece on the new bike lanes,
+mixed reactions as usual.
+3. An interview with the city's new parks director.
+
+Read the full digest here: https://chronicleweekly.com/digest/week-37
+
+As always, you can manage your subscription preferences or unsubscribe
+at https://chronicleweekly.com/preferences
+
+Thanks for reading,
+The Chronicle Weekly team

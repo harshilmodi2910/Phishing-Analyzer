@@ -1,0 +1,18 @@
+From: "Priya Nair" <priya.nair@example.com>
+To: team-standup@example.com
+Subject: Re: standup notes from today
+Date: Thu, 24 Sep 2026 17:02:00 -0400
+Message-ID: <4c7a3e91@example.com>
+Authentication-Results: mx.example.com; spf=pass smtp.mailfrom=example.com; dkim=pass header.i=@example.com; dmarc=pass header.from=example.com
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Thanks for writing these up.
+
+I'm still blocked on the staging environment issue from yesterday, going
+to sync with the infra team in the morning. Otherwise on track to finish
+the migration script by end of the sprint.
+
+No blockers on the review side, I'll get to the two open PRs tonight.
+
+Priya

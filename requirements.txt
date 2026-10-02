@@ -1,0 +1,8 @@
+# the analyzer itself only uses the Python standard library
+# python-whois is optional, it enables a live domain age lookup in
+# signals.py, if it is not installed the tool falls back to the heuristic
+# proxy check automatically
+python-whois>=0.9.4
+
+# testing
+pytest>=7.4

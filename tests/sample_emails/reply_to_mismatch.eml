@@ -1,0 +1,18 @@
+From: "Bursar's Office" <billing@statecollege.edu>
+Reply-To: finance@collectionservices-llc.com
+To: student@example.com
+Subject: Outstanding balance on your student account
+Date: Tue, 22 Sep 2026 09:30:00 -0400
+Message-ID: <6f1a8b52@statecollege.edu>
+Authentication-Results: mx.example.com; spf=pass smtp.mailfrom=statecollege.edu; dkim=pass header.i=@statecollege.edu; dmarc=pass header.from=statecollege.edu
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Dear Student,
+
+Our records show an outstanding balance on your student account. Please
+reply to this email with your preferred payment method so we can assist
+you.
+
+Bursar's Office
+State College

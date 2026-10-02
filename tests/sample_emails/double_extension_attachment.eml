@@ -1,0 +1,30 @@
+From: "Accounts Payable" <ap@supplier-invoices.com>
+To: billing@example.com
+Subject: Invoice #48821 attached
+Date: Sun, 20 Sep 2026 11:50:00 -0400
+Message-ID: <1d8f6c40@supplier-invoices.com>
+Authentication-Results: mx.example.com; spf=pass smtp.mailfrom=supplier-invoices.com; dkim=pass header.i=@supplier-invoices.com; dmarc=pass header.from=supplier-invoices.com
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="BOUNDARY48821"
+
+--BOUNDARY48821
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hi,
+
+Please find the attached invoice for last month's order. Let us know if
+you have any questions.
+
+Thanks,
+Accounts Payable
+
+--BOUNDARY48821
+Content-Type: application/octet-stream; name="invoice.pdf.exe"
+Content-Disposition: attachment; filename="invoice.pdf.exe"
+Content-Transfer-Encoding: base64
+
+TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+
+--BOUNDARY48821--

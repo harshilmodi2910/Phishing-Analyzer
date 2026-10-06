@@ -1,0 +1,18 @@
+From: "Account Services" <service@paypa1.com>
+To: customer@example.com
+Subject: We need you to confirm a recent change
+Date: Thu, 17 Sep 2026 14:22:00 -0400
+Message-ID: <9c3d1a20@paypa1.com>
+Authentication-Results: mx.example.com; spf=pass smtp.mailfrom=paypa1.com; dkim=pass header.i=@paypa1.com; dmarc=pass header.from=paypa1.com
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+We noticed a change to the email address on your account. If this was
+you, no action is needed.
+
+If you want to review the change, you can sign in here:
+https://paypa1.com/account/review
+
+Account Services

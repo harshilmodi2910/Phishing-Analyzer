@@ -1,0 +1,17 @@
+From: "IT Helpdesk" <helpdesk@webmail-relay.com>
+To: employee@example.com
+Subject: URGENT: your mailbox storage will be suspended
+Date: Fri, 18 Sep 2026 09:40:00 -0400
+Message-ID: <2b7e4f10@webmail-relay.com>
+Authentication-Results: mx.example.com; spf=pass smtp.mailfrom=webmail-relay.com; dkim=pass header.i=@webmail-relay.com; dmarc=pass header.from=webmail-relay.com
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+<html>
+<body>
+<p>Your mailbox has exceeded its storage limit and will be suspended
+within 24 hours unless you verify your account immediately.</p>
+<p>This is a final notice, act now to avoid account suspension.</p>
+<p><a href="https://bit.ly/3xMailFix">Click here to verify your account</a></p>
+</body>
+</html>

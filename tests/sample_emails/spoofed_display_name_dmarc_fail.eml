@@ -1,0 +1,18 @@
+From: "Bank of America Alerts" <alerts@accountsecure-notify.net>
+To: customer@example.com
+Subject: Unusual activity detected on your account
+Date: Sat, 19 Sep 2026 07:15:00 -0400
+Message-ID: <5a9d2e88@accountsecure-notify.net>
+Authentication-Results: mx.example.com; spf=fail smtp.mailfrom=accountsecure-notify.net; dkim=none; dmarc=fail header.from=accountsecure-notify.net
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Dear Customer,
+
+We detected unusual activity on your account and have temporarily
+limited some features. Please confirm your identity to restore full
+access.
+
+Sign in here: https://accountsecure-notify.net/login
+
+Bank of America Alerts

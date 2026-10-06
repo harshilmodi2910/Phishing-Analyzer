@@ -20,28 +20,28 @@ five strong ones.
 
 The seven signals:
 
-- **Authentication status** — reads the `Authentication-Results` header and
+- **Authentication status** - reads the `Authentication-Results` header and
   checks whether SPF, DKIM, and DMARC passed. If the header is missing
   entirely, that counts against the email too, since a legitimate mail
   server almost always adds one.
-- **Reply-To mismatch** — flags it when the Reply-To address is on a
+- **Reply-To mismatch** - flags it when the Reply-To address is on a
   different domain than the From address. A lot of phishing wants your
   reply to go somewhere other than where the email claims to come from.
-- **Suspicious links** — checks for URL shorteners, links where the visible
+- **Suspicious links** - checks for URL shorteners, links where the visible
   text shows one domain but the actual href goes somewhere else, and domains
   that look like a misspelled version of a well known brand (paypa1.com
   instead of paypal.com, that kind of thing).
-- **Urgency language** — scans the subject and body for pressure phrases,
+- **Urgency language** - scans the subject and body for pressure phrases,
   "act now," "your account will be suspended," "verify immediately," stuff
   like that. Counts how many distinct hits there are and scales severity
   accordingly.
-- **Spoofed display name** — catches when the display name claims to be a
+- **Spoofed display name** - catches when the display name claims to be a
   known brand ("PayPal Security") but the actual sending domain has nothing
   to do with that brand.
-- **Attachment flags** — looks for executable or script attachments, and
+- **Attachment flags** - looks for executable or script attachments, and
   specifically for the double extension trick, something like
   `invoice.pdf.exe`, where the filename is trying to look like a document.
-- **Newly registered domain** — tries a live WHOIS lookup if the
+- **Newly registered domain** - tries a live WHOIS lookup if the
   `python-whois` package is installed, and if that's not available or comes
   back empty, falls back to a heuristic based on the TLD and shape of the
   domain name. I go into why in the design decisions section.
@@ -152,20 +152,20 @@ anything real: 0 to 29 is low, 30 to 59 is medium, 60 and up is high.
 `tests/sample_emails/` has ten `.eml` files I wrote by hand, a mix of clean
 and phishing, each one built to isolate a different combination of signals:
 
-- `legit_newsletter.eml` and `legit_no_links.eml` — clean, should score low
-- `spf_fail_clean_links.eml` — auth fails but the links are fine
-- `lookalike_domain_valid_spf.eml` — domain is a lookalike (paypa1.com) but
+- `legit_newsletter.eml` and `legit_no_links.eml` - clean, should score low
+- `spf_fail_clean_links.eml` - auth fails but the links are fine
+- `lookalike_domain_valid_spf.eml` - domain is a lookalike (paypa1.com) but
   since the attacker owns that domain outright, SPF actually passes
-- `urgency_shortlink_auth_pass.eml` — urgency language and a shortened link,
+- `urgency_shortlink_auth_pass.eml` - urgency language and a shortened link,
   but authentication passes
-- `spoofed_display_name_dmarc_fail.eml` — display name claims Bank of
+- `spoofed_display_name_dmarc_fail.eml` - display name claims Bank of
   America, domain doesn't match, DMARC fails
-- `double_extension_attachment.eml` — the invoice.pdf.exe trick
-- `suspicious_tld_no_auth_header.eml` — no Authentication-Results header at
+- `double_extension_attachment.eml` - the invoice.pdf.exe trick
+- `suspicious_tld_no_auth_header.eml` - no Authentication-Results header at
   all, domain on a cheap/abused TLD
-- `reply_to_mismatch.eml` — From and Reply-To on different domains,
+- `reply_to_mismatch.eml` - From and Reply-To on different domains,
   otherwise clean
-- `obvious_multi_signal_phishing.eml` — basically everything at once, this
+- `obvious_multi_signal_phishing.eml` - basically everything at once, this
   one scores 83 out of 100
 
 None of these are real emails, I made them up to exercise specific code
